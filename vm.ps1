@@ -22,3 +22,8 @@ Set-AzVMSourceImage -PublisherName MicrosoftWindowsServer -Offer WindowsServer -
 Add-AzVMNetworkInterface -Id $nic.Id -Primary 
 
 New-AzVM -ResourceGroupName $r -Location $l -VM $vm -Verbose
+
+
+Get-AzVMImagePublisher
+Get-AzVMImageoffer -PublisherName MicrosoftWindowsServer
+Get-AzVMImagesku -PublisherName MicrosoftWindowsServer -Location "West Europe" -Offer WindowsServer
