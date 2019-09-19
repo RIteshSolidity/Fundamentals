@@ -1,0 +1,10 @@
+We created a Resource Group
+Create a new Availability set
+create a new set of VMs on the Availability set
+Create a load balancer
+create a public IP address for load balancer
+attach the public IP address to the frontend configuration of load balancer
+create a new Backend pool within the load balancer
+attach the nic of both the vms to the backend pool
+configure the proble settings
+configure the load balancing rules (incoming 80 goes to backend pool 80)
